@@ -1,0 +1,16 @@
+name: Deploy
+
+on: workflow_dispatch
+
+
+jobs:
+
+  org-secret:
+    uses: mekpin-organization/reusable/.github/workflows/main.yml@main
+    # secrets:
+    #   cr_username: ${{ secrets.CR_USERNAME }}
+    #   cr_token: ${{ secrets.CR_TOKEN }}
+    #   mantichor_client_id: ${{ secrets.MANTICHOR_CLIENT_ID }}
+    #   mantichor_client_token: ${{ secrets.MANTICHOR_CLIENT_TOKEN }}
+    #   mantichor_url: ${{ secrets.MANTICHOR_URL }}
+    #   snyk_token: ${{ secrets.SNYK_TOKEN }}

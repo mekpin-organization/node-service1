@@ -7,7 +7,8 @@ jobs:
 
   org-secret:
     uses: mekpin-organization/reusable/.github/workflows/main.yml@main
-    # secrets:
+    secrets:
+      mang: ${{ secrets.MANGGIL }}
     #   cr_username: ${{ secrets.CR_USERNAME }}
     #   cr_token: ${{ secrets.CR_TOKEN }}
     #   mantichor_client_id: ${{ secrets.MANTICHOR_CLIENT_ID }}
